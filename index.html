@@ -1,0 +1,54 @@
+﻿<html><head><title>wellcome</title></head>
+ <style> body{ background-image:url(https://raw.githubusercontent.com/muhara/-HasGab-pzsc/master/img1.jpg); background-size:cover; background-attachment: center; } p{ color:black; } </style>
+ <body><font color="Magenta">
+<div class="time" align="right" id="clock"></div>			<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 12) {		        a_p = "AM";		    }
+ else {		        a_p = "PM";		    }
+		    if (curr_hour == 0) {		        curr_hour = 12;		    }
+		    if (curr_hour > 12) {		        curr_hour = curr_hour - 12;		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+		    curr_second = checkTime(curr_second); document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->		</script>
+<div align="right"><script type='text/javascript'>
+			var months = ['1/semi', '2/hangat', '3/Penghujan', '4/Gugur', '5/Kenangan', '6/panas', '7/kemarau', '8/Merdekaria', '9/Badai', '10/Lautan tenang', '11/Pertentangan', '12/Salju'];
+			var myDays = ['Ahad', 'Senin', 'Tsalasa', 'Rabu', 'Khamis', 'Jumat', 'Sabat'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);</script></font></div>
+<center><br><font size="6px" color="red" face="Serif"> EVIL's Projects</Font>
+<br><font size="3px" color="red" face="Serif">Experimental Version for Indonesian Lammer's Projects</font><br>
+<a href="index.html"><br>
+<img  onclick="alert('on build');" src="https://raw.githubusercontent.com/muhara/-HasGab-pzsc/master/logo1.png" height="300" width="300"></a><br>
+
+<table  width="100%" border="1" bordercolor="Red">
+<tr>
+<td><font onclick="alert('on build');" face="serif" size="3px" color="white">Profile</font> </td>
+<td><font onclick="alert('on build');" face="serif" size="3px" color="white">Libraries</font></td>
+<td><font onclick="alert('on build');" face="serif" size="3px" color="white">Option</font></td>
+<td><font onclick="alert('on build');" face="serif" size="3px" color="white">Notes& Notification</font></td>
+</tr>
+</table>
+<div align="right"><a href="http://muharaasa.blogspot.com"><font face="serif" size="2px" color="white">Muhara Asa Writing</font></a></div>
+</body>
+</html>
